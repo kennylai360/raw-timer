@@ -1,0 +1,65 @@
+@font-face {
+  font-family: Orbitron;
+  src: url(./static/Orbitron-Regular.ttf)
+}
+
+body {
+  background-color: black;
+  font-family: Orbitron;
+}
+
+.container {
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  #timer {
+    font-size: 100px;
+    color: lightblue;
+
+    @media (max-width: 700px) {
+      font-size: 60px;
+    }
+
+    @media (max-width: 400px) {
+      font-size: 40px;
+    }
+
+    @media (max-width: 300px) {
+      font-size: 20px;
+    }
+  }
+
+  #date {
+    font-size: 40px;
+    color: lightblue;
+
+    @media (max-width: 700px) {
+      font-size: 30px;
+    }
+
+    @media (max-width: 400px) {
+      font-size: 25px;
+    }
+
+    @media (max-width: 300px) {
+      font-size: 20px;
+    }
+  }
+
+  .container__switchBtn {
+    font-size: 20px;
+    border: lightblue solid 1px;
+    border-radius: 20px;
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    &:hover {
+      cursor:pointer;
+      color: black;
+      background: white;
+    }
+  }
+}
